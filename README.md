@@ -90,6 +90,8 @@ Instead of relying on accuracy alone, the model is evaluated using:
 
 - Threshold analysis
 
+- Threshold analysis Curve
+
 ✅ *Test Set Performance*
 Metric	NORMAL	PNEUMONIA
 Precision	0.85	0.92
@@ -127,6 +129,11 @@ Rather than using the default 0.5 cutoff, multiple thresholds were evaluated to 
 - Normal recall (avoiding unnecessary alarms)
 
 - A threshold of ~ 0.8 was selected to achieve balanced clinical performance.
+
+**Precision-Recall vs Decision Threshold**
+This plot shows how precision and recall change as the decision threshold is varied.
+The selected threshold is (0.82) balances false postives and false negatives,
+improving recall for the NORMAL class while maintaining high sensitivity for PNEUMONIA.
 
 🖼️ **Single Image Inference**
 
